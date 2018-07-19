@@ -5,5 +5,7 @@ $(document).ready(function(){
 
     $(".user-name").text(inputtedName);
     $("#welcome").fadeIn();
+    $("input.name").val("");
+    $("input.id").val("");
   })
 })
