@@ -15,30 +15,30 @@
     <div class="container">
      <h1>Gulf of Hassan Bank</h1>
      <div class="row">
-      <div class="col-md-4">
-        <form class="form-control">
+      <div class="col-md-6">
+        <form id="register">
           <h2>Register New Account</h2>
           <label for="name">Name</label><br>
-          <input type="text" class="name"><br>
-          <label for="initial deposit">Initial Deposit</label><br>
-          <input type="text" class="initial-deposit"><br><br>
+          <input type="text" class="name" required=""  oninvalid="this.setCustomValidity('Please Enter Name')"
+ oninput="setCustomValidity('')"></input><br>
+          <label for="id no">ID number.</label><br>
+          <input type="number" class="id" required=""  oninvalid="this.setCustomValidity('Please Enter ID number')"
+ oninput="setCustomValidity('')"><br><br>
+          <h3>Choose Account Type</h3>
+          <input type="radio" name="account" value="sa" required=""  oninvalid="this.setCustomValidity('Please Select Account Type')"
+ oninput="setCustomValidity('')">Savings Account<br>
+          <input type="radio" name="account" value="ca">Current Account<br>
+          <input type="radio" name="account" value="fda"> Fixed Deposit Account<br><br>
           <button type="submit" class="btn btn-primary">Register</button>
         </form>
       </div>
-      <div class="col-md-6">
-        <form class="form-control">
-          <h2>Deposit or Withdrawal of Funds</h2>
-          <label for="deposit">Deposit Amount</label><br>
-          <input type="text" class="deposit-amount"><br>
-          <label for="withdrawal">Withdraw Amount</label><br>
-          <input type="text" class="withdrawal-amount">
-        </form>
-      </div>
-     </div>
-     <div class="balance">
-       <h2>Current Balance:</h2>
 
      </div>
+
+    </div>
+    <div id="welcome">
+      <p>congratulations <span class="user-name"></span> ! you've succesfully opened an account with us! Click next to proceed </p>
+      <a href="bank.html"class="button">Next</a>
     </div>
   </body>
 </html>
